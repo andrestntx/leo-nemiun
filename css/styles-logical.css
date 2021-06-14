@@ -219,10 +219,6 @@ form input[type="submit"] {
 }
 
 @media screen and (min-width: 1366px) {
-  body {
-    border:1px solid red;
-  }
-
   .hero {
     block-size: 350px;
   }
