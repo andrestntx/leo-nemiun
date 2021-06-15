@@ -1,0 +1,65 @@
+body.theme-a {
+  background: var(--white30);
+  color: var(--black20);
+  font-family: 'Roboto', sans-serif;
+}
+
+.theme-a h2, .theme-a h3 {
+  color: var(--black10);
+}
+
+.theme-a p {
+  font-weight: normal;
+}
+
+.theme-a .section-content p {
+  color: var(--black10);
+}
+
+.theme-a li, .theme-a .section-content ol li, .theme-a .section-content li span {
+  color: var(--black10);
+}
+
+.theme-a .section-content#box-model h3 {
+  font-weight: normal;
+}
+
+.theme-a pre {
+  background: #FEC62E;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.theme-a header h3 {
+  color: var(--gray30);
+  font-weight: normal;
+}
+
+.theme-a blockquote {
+  background: var(--white30);
+}
+
+.theme-a .slider-bullet-list .slider-bullet {
+  background: rgba(66, 66, 66, 0.2);
+}
+
+.theme-a .form input {
+  background: var(--white30);
+  border: 1px solid var(--black30);
+  border-radius: 90px;
+  color: var(--black30);
+}
+
+.theme-a .form input::-webkit-input-placeholder {
+  color: var(--black10);
+}
+
+.theme-a .form input[type="submit"] {
+  background: black;
+  color: var(--white30);
+}
+
+.theme-a .hero {
+    background-image: linear-gradient(to top, rgb(255, 255, 255, 0.3), transparent), url('/images/pattern.png');
+}
