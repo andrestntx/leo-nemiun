@@ -39,11 +39,16 @@
 
   </head>
   <body class="theme-c">
-    <div class="hero"></div>
-    <div class="header">
+    <main class="main">
       <div class="wrapper">
-        <div class="header-content">
-          <header>
+        <div class="main-content">
+          <div class="section-content">
+            <h1>Curso esencial de HTML y CSS</h1>
+            <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de
+              contenidos,
+              en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
+          </div>
+          <header class="section-content">
             <nav>
               <h3>variantes del proyecto</h3>
               <ul class="variants">
@@ -55,43 +60,32 @@
               </ul>
               <section class="nav-content">
                 <h3>contenido</h3>
-                <details open>
-                  <summary>Setup</summary>
-                  <ol>
-                    <li><a href="#chrome">Google Chrome</a></li>
-                    <li><a href="#vscode">Visual Studio Code</a></li>
-                    <li><a href="#figma">Figma</a></li>
-                    <li><a href="#github">Github</a></li>
-                  </ol>
-                </details>
-                <details open>
-                  <summary>Conceptos esenciales del Desarrollo Web</summary>
-                  <ol>
-                    <li>Qué es HTML</li>
-                    <li>Etiquetas</li>
-                    <li>DOM</li>
-                    <li>Semántica</li>
-                    <li>Atributos</li>
-                    <li>CSS</li>
-                  </ol>
-                </details>
+                <div class="content-links">
+                  <div class="details">
+                    <h4>Setup</h4>
+                    <ol>
+                      <li><a href="#chrome">Google Chrome</a></li>
+                      <li><a href="#vscode">Visual Studio Code</a></li>
+                      <li><a href="#figma">Figma</a></li>
+                      <li><a href="#github">Github</a></li>
+                    </ol>
+                  </div>
+                  <div class="details">
+                    <h4>Conceptos esenciales del Desarrollo Web</h4>
+                    <ol>
+                      <li><a href="#html">Qué es HTML</a></li>
+                      <li><a href="#tags">Etiquetas</a></li>
+                      <li><a href="#dom">DOM</a></li>
+                      <li><a href="#semantic">Semántica</a></li>
+                      <li><a href="#attributes">Atributos</a></li>
+                      <li><a href="#css">CSS</a></li>
+                    </ol>
+                  </div>
+                </div>
               </section>
             </nav>
-          </header>
-        </div>
-      </div>
-    </div>
-
-    <main class="main">
-      <div class="wrapper">
-        <div class="main-content">
-          <div class="section-content">
-            <h1>Curso esencial de HTML y CSS</h1>
-            <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de
-              contenidos,
-              en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
             <hr>
-          </div>
+          </header>
           <section class="section-content counter" id="setup">
             <h2>Setup</h2>
             <img class="logo" src="images/chrome.png" alt="Logo de google chrome"/>
@@ -125,7 +119,7 @@
             </blockquote>
           </section>
           <hr>
-          <section class="section-content" id="concepts">
+          <section class="section-content counter" id="concepts">
             <h2>Conceptos esenciales del Desarrollo Web</h2>
             <h3>Qué es HTML</h3>
             <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado

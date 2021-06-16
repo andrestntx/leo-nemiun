@@ -1,0 +1,128 @@
+body.theme-d {
+  background: var(--white30);
+  color: var(--black20);
+  font-family: 'Roboto', sans-serif;
+}
+
+.theme-d .wrapper {
+  max-inline-size: 1135px;
+}
+
+.theme-d .section-content h1,
+.theme-d .section-content h2,
+.theme-d .section-content h3,
+.theme-d .section-content p {
+  text-align: center;
+}
+
+.theme-d .section-content#box-model h1,
+.theme-d .section-content#box-model h2,
+.theme-d .section-content#box-model h3,
+.theme-d .section-content#box-model p {
+  text-align: start;
+}
+
+.theme-d .section-content h1 {
+  line-height: 71.1px;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.theme-d .section-content img {
+  margin-inline: auto;
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+
+.theme-d h2, .theme-d h3 {
+  color: var(--black10);
+}
+
+.theme-d p {
+  font-weight: normal;
+}
+
+.theme-d .section-content p {
+  color: var(--black10);
+}
+
+.theme-d li, .theme-d .section-content ol li, .theme-d .section-content li span {
+  color: var(--black10);
+}
+
+.theme-d .section-content#box-model h3 {
+  font-weight: normal;
+}
+
+.theme-d pre {
+  background: #FEC62E;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.theme-d header h3 {
+  color: var(--gray30);
+  font-weight: normal;
+}
+
+.theme-d blockquote {
+  background: var(--white30);
+  margin-block: 64px;
+  padding: 0;
+  padding-inline: 16px;
+  border-inline-start: 4px solid #5551FF;
+  border-radius: 0;
+  max-inline-size: 613px;
+  font-size: 24px;
+  margin-inline: auto;
+  line-height: 32px;
+}
+
+.theme-d .section-content blockquote p {
+  text-align: start;
+}
+
+.theme-d .slider-bullet-list .slider-bullet {
+  background: rgba(66, 66, 66, 0.2);
+}
+
+.theme-d .form input {
+  background: var(--white30);
+  border: 1px solid var(--black30);
+  border-radius: 90px;
+  color: var(--black30);
+}
+
+.theme-d .form input::-webkit-input-placeholder {
+  color: var(--black10);
+}
+
+.theme-d .form input[type="submit"] {
+  background: black;
+  color: var(--white30);
+}
+
+.theme-d .hero {
+  background-image: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('/images/pattern-2a.png');
+}
+
+.theme-d hr {
+  margin-block: 64px;
+}
+
+.theme-d nav details summary {
+    color: black;
+}
+
+@media screen and (min-width: 1366px) {
+  .theme-d .main-content {
+    padding-inline-start: 0;
+    padding-inline-end: 232px;
+  }
+
+  .theme-d header {
+    inset-inline-end: 0;
+    inline-size: 208px;
+  }
+}

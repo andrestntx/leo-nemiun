@@ -1,0 +1,78 @@
+body.theme-e, .theme-e .form input  {
+  background: #232946;
+}
+
+.theme-e form input[type="submit"] {
+  background: #EEBBC3;
+  color: #232946;
+  font-weight: bold;
+}
+
+.theme-e p, .theme-e ul.variants li a, .theme-e li a, .theme-e li span {
+  color: #B8C1EC;
+}
+
+.theme-e p {
+  font-weight: normal;
+}
+
+.theme-e header {
+  margin-block-start: 24px;
+  padding-block-end: 24px;
+  border-block-end: 1px solid rgba(97, 97, 97, 0.2);
+}
+
+.theme-e nav section.nav-content {
+  display: block;
+}
+
+.theme-e h1, .theme-e h2, .theme-e h3, .theme-e pre {
+  color: #FFFFFE;
+}
+
+.theme-e h1 {
+  margin-block-start: 0;
+}
+
+.theme-e h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39.01px;
+}
+
+.theme-e h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.26px;
+}
+
+.theme-e blockquote {
+  background: #D4939D;
+  padding: 16px;
+}
+
+.theme-e blockquote p {
+  color: #232946;
+}
+
+.theme-e pre {
+  border: none;
+  box-shadow: none;
+  background: none;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1366px) {
+  .theme-e .header {
+      inset-block-start: 20px;
+  }
+
+  .theme-e .header-content {
+    inset-block-start: 0;
+  }
+
+  .theme-e main {
+    margin-block-start: 100px;
+  }
+}

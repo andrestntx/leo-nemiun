@@ -4,11 +4,33 @@ body.theme-c {
   font-family: 'Roboto', sans-serif;
 }
 
+.theme-c nav section.nav-content {
+  display: block;
+}
+
+.theme-c nav .details h4 {
+  font-size: 14px;
+  color: var(--gray30);
+  font-weight: bold;
+  margin-block: 16px;
+}
+
+.theme-c nav .content-links {
+  padding-inline-start: 16px;
+  border-inline-start: 4px solid #C4C4C4;
+}
+
+.theme-c h1 {
+  font-size: 32px;
+  line-height: 37.5px;
+}
+
 .theme-c h2, .theme-c h3 {
   color: var(--black10);
 }
 
 .theme-c p {
+  font-size: 16px;
   font-weight: normal;
 }
 
@@ -27,8 +49,21 @@ body.theme-c {
 .theme-c pre {
   background: var(--gray10);
   border: none;
-  border-radius: 0;
   box-shadow: none;
+}
+
+.theme-c nav ul.variants li a {
+    color: var(--gray30);
+    font-weight: 500;
+}
+
+.theme-c nav ul.variants li.selected a {
+    color: var(--white30);
+    font-weight: 500;
+}
+
+.theme-c header a {
+    color: var(--gray30);
 }
 
 .theme-c header h3 {
@@ -62,4 +97,46 @@ body.theme-c {
 
 .theme-c .hero {
     background-image: linear-gradient(to top, rgb(255, 255, 255, 0.3), transparent), url('/images/pattern.png');
+}
+
+.theme-c blockquote {
+  border-inline-start: 4px solid var(--black10);
+  border-radius: 0;
+  padding-block: 0;
+  padding-inline: 16px;
+}
+
+.theme-c blockquote p{
+  margin-block: 0;
+  line-height: 32px;
+  color: var(--gray20);
+}
+
+.theme-c blockquote span {
+  color: var(--gray30);
+}
+
+.theme-c blockquote span::before {
+  content: '-';
+}
+
+@media screen and (min-width: 1366px) {
+  .theme-c .header {
+    position: relative;
+    inset-block-start: 0;
+  }
+
+  .theme-c header {
+    position: relative;
+    inline-size: 100%;
+  }
+
+  .theme-c .main-content {
+    padding-inline: 16px;
+  }
+
+  .theme-c h1 {
+    font-size: 60px;
+    line-height: 70.31px;
+  }
 }
