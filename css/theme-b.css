@@ -1,3 +1,46 @@
-body.theme-b  {
+:root .theme-b {
+  --font: 'Nunito';
+  --primary: #FFFFFF;;
+  --primary100: #A5A3A5;
+  --primary200: var(--primary100);
 
+  --secondary: #251F24;
+  --secondary100: #157EFB;
+  --secundary200: #3A3539;
+}
+
+.theme-b .section-content p, .theme-b nav h3 {
+  font-weight: bold;
+}
+
+.theme-b blockquote p {
+  color: var(--primary);
+  font-weight: normal;
+}
+
+.theme-b pre {
+  background: var(--secundary200);
+}
+
+.theme-b form input[type="submit"] {
+  color: var(--primary);
+}
+
+.theme-b .section-content ul {
+  list-style-image: url('../images/market-white.png');
+}
+
+.hero {
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+}
+
+@media screen and (min-width: 1366px) {
+  .theme-b blockquote p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .theme-b nav h3 {
+    font-weight: normal;
+  }
 }

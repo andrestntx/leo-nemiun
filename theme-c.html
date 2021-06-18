@@ -14,8 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet">
     <link rel="stylesheet" href="css/styles-logical.css">
     <link rel="stylesheet" href="css/theme-c.css">
 
@@ -73,7 +71,7 @@
                   <div class="details">
                     <h4>Conceptos esenciales del Desarrollo Web</h4>
                     <ol>
-                      <li><a href="#html">Qué es HTML</a></li>
+                      <li><a href="#html">HTML</a></li>
                       <li><a href="#tags">Etiquetas</a></li>
                       <li><a href="#dom">DOM</a></li>
                       <li><a href="#semantic">Semántica</a></li>
@@ -121,7 +119,7 @@
           <hr>
           <section class="section-content counter" id="concepts">
             <h2>Conceptos esenciales del Desarrollo Web</h2>
-            <h3>Qué es HTML</h3>
+            <h3>HTML</h3>
             <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
             y la estructura del contenido.</p>
             <pre>
@@ -215,7 +213,7 @@
                 </scroll-page>
               </scroll-container>
               <div class="slider-bullet-list">
-                <a href="#video-1" class="slider-bullet"></a>
+                <a href="#video-1" class="slider-bullet selected"></a>
                 <a href="#video-2" class="slider-bullet"></a>
                 <a href="#video-3" class="slider-bullet"></a>
               </div>
@@ -224,14 +222,28 @@
           </section>
           <section class="section-content">
             <h3>Suscríbete a nuestro newsletter</h3>
-            <form action="#" class="form">
-              <input type="text" placeholder="Nombre" required/>
-              <input type="email" placeholder="Correo electrónico" required/>
-              <input type="submit" value="Suscribirme">
+            <form action="#" class="form combined-form">
+              <input type="text" placeholder="Nombre" required />
+              <div class="combined-submit">
+                <input type="email" placeholder="Correo electrónico" required />
+                <input type="submit" value="Suscribirme">
+              </div>
             </form>
           </section>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <p>© andrestntx 2021</p>
+          <div class="social-links">
+            <a href=""><img src="./images/instagram_white.png" alt="Logo de Instagram"></a>
+            <a href=""><img src="./images/facebook_white.png" alt="Logo de Facebook"></a>
+            <a href="https://twitter.com/andrestntx"><img src="./images/twitter_white.png" alt="Logo de Twitter"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

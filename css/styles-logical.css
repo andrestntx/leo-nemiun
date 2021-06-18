@@ -12,41 +12,137 @@
   --gray10: #E5E5E5;
 }
 
+/* =================================================================
+Theme colors
+*/
+
 body {
-  background: #251F24;
-  color: var(--white30);
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font), sans-serif;
+  color: var(--primary100);
+  background: var(--secondary);
+}
+
+h1, h2, h3, pre, details summary, p a {
+  color: var(--primary);
+}
+
+b {
+  color: var(--secondary100);
+}
+
+details summary {
+  font-weight: bold;
+}
+
+form .combined-submit {
+  border: 1px solid var(--primary);
+  font-size: 0;
+  border-radius: 90px;
+  margin-block-end: 40px;
+}
+
+form .combined-submit input {
+  display: inline-block;
+  inline-size: 60%;
+  border: none;
+  border-radius: 0;
+  margin-block: 0;
+}
+
+form .combined-submit input[type="submit"] {
+  inline-size: 40%;
+}
+
+
+.form input  {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--primary100);
+}
+
+li, li a {
+  color: var(--primary100);
+}
+
+.variants li, .variants li a {
+  color: var(--primary200);
+  font-weight: 500;
+}
+
+li.selected {
+  background: black;
+}
+
+li.selected a {
+  color: white;
+}
+
+header a:hover {
+  color: var(--primary);
+}
+
+form input[type="submit"] {
+  background: var(--secondary100);
+  color: var(--secondary);
+}
+
+blockquote {
+  background: var(--secundary200);
+}
+
+blockquote p {
+  color: var(--secondary);
+}
+
+.footer-content {
+  background: var(--secondary100);
+}
+
+.footer-content p {
+  color: var(--secondary);
+}
+
+.slider-bullet-list .slider-bullet {
+  background: rgba(66, 66, 66, 0.2);
+}
+
+.slider-bullet-list .slider-bullet.selected {
+  background: var(--primary);
+}
+
+/* =================================================================
+  Logical sizes
+*/
+
+blockquote span::before {
+  content: '-';
+}
+
+body {
   margin: 0;
   line-height: 24px;
 }
 
-a {
-  color: var(--white30);
-}
-
 .header-content {
-  padding-inline: 27px;
+  padding-inline: 16px;
 }
 
 header {
   margin-block-start: 16px;
   font-size: 14px;
-  color: var(--white30);
 }
 
 header li {
-  color: var(--white20);
   text-decoration: none;
   margin-block-end: 16px;
 }
 
 header a {
-  color: var(--white20);
   text-decoration: none;
-}
-
-header a:hover {
-  color: var(--white30);
 }
 
 nav h3 {
@@ -54,7 +150,6 @@ nav h3 {
   text-transform: uppercase;
   margin-block-start: 0;
   margin-block-end: 16px;
-  font-weight: bold;
 }
 
 nav ul.variants {
@@ -70,16 +165,7 @@ nav ul.variants li {
 }
 
 nav ul.variants li a {
-  color: var(--white20);
   font-weight: 500;
-}
-
-nav ul.variants li.selected {
-  background: black;
-}
-
-nav ul.variants li.selected a {
-  color: var(--white30);
 }
 
 nav ul.variants li::marker {
@@ -88,11 +174,6 @@ nav ul.variants li::marker {
 
 nav section.nav-content {
   display: none;
-}
-
-nav details summary {
-  color: var(--white30);
-  font-weight: bold;
 }
 
 h1, h2, h3 {
@@ -124,18 +205,14 @@ hr {
 }
 
 p {
-  color: var(--white20);
-  font-weight: bold;
   font-size: 17px;
 }
 
 p.cta {
-  color: var(--white30);
   font-weight: normal;
 }
 
 p.cta a {
-  color: #157EFB;
 }
 
 .section-content {
@@ -151,6 +228,12 @@ p.cta a {
 .section-content img.logo {
   inline-size: 48px;
   block-size: 48px;
+  margin-block-start: 24px;
+  margin-block-end: 16px;
+}
+
+.section-content img.logo ~ h3 {
+  margin-block-start: 16px;
 }
 
 .section-content.counter {
@@ -177,14 +260,6 @@ p.cta a {
   padding-inline-start: 16px;
 }
 
-.section-content li  {
-  color: var(--white30);
-}
-
-.section-content ol li, .section-content li span  {
-  color: var(--white20);
-}
-
 .section-content ul li {
   margin-block: 16px;
 }
@@ -194,19 +269,15 @@ p.cta a {
 }
 
 pre {
-  background: var(--white10);
   padding: 40px;
   overflow: auto;
-  border: 10px solid #5551FF;
   border-radius: 8px;
-  box-shadow: -10px 10px 0 0 #ABAAF6;
   margin-block-end: 30px;
 }
 
 blockquote {
   margin-block: 40px;
   margin-inline: 0;
-  background-color: var(--white10);
   border-radius: 8px;
   padding: 8px;
   line-height: 32px;
@@ -214,21 +285,12 @@ blockquote {
   font-weight: bold;
 }
 
-blockquote p {
-  color: var(--white30)
-}
-
-.hero {
-  block-size: 96px;
-  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-}
-
 .main hr {
 
 }
 
 .wrapper {
-  max-inline-size: 902px;
+  max-inline-size: 990px;
   margin: auto;
 }
 
@@ -265,7 +327,6 @@ blockquote p {
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background: var(--white30);
   border-radius: 50%;
   margin-inline-start: 2px;
 }
@@ -273,24 +334,56 @@ blockquote p {
 .form input {
   inline-size: 100%;
   box-sizing: border-box;
-  border: 1px solid var(--white30);
-  background: #251F24;
   margin-block-end: 24px;
   border-radius: 8px;
   padding-block: 12px;
   padding-inline: 16px;
-  color: var(--white30);
   font-size: 16px;
 }
 
-.form input::-webkit-input-placeholder {
-  color: var(--white20);
+form input[type="submit"] {
+  border: none;
+  font-weight: bold;
 }
 
-form input[type="submit"] {
-  background: #157EFB;
-  border: none;
+.footer-content {
+  padding-block-start: 40px;
+  padding-block-end: 58px;
 }
+
+.footer-content img {
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.footer-content p {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin-block-start: 0;
+  margin-block-end: 16px;
+}
+
+.footer-content .social-links {
+  max-inline-size: 120px;
+  block-size: 24px;
+  display: block;
+  margin: auto;
+  font-size: 0;
+}
+
+.footer-content .social-links img {
+  margin-inline: 8px;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.hero {
+  block-size: 96px;
+}
+
 
 @media screen and (min-width: 1366px) {
   .hero {
@@ -306,10 +399,6 @@ form input[type="submit"] {
     position: relative;
     inset-block-start: 65px;
     padding-inline: 0;
-  }
-
-  .main-content {
-    padding-inline-start: 346px;
   }
 
   header {
@@ -340,10 +429,11 @@ form input[type="submit"] {
   blockquote {
     margin-block-start: 80px;
     margin-block-end: 63px;
-    background-color: var(--white10);
     border-radius: 8px;
-    padding-inline: 24px;
-    padding-block: 24px;
+    padding-inline: 16px;
+  }
+
+  blockquote p {
     line-height: 24px;
     font-size: 24px;
   }
@@ -352,5 +442,25 @@ form input[type="submit"] {
     margin-block-start: 40px;
     inline-size: 80px;
     block-size: 80px;
+  }
+
+  .footer-content {
+    padding-block: 48px;
+  }
+
+  .main-content {
+    padding-inline-start: 330px;
+    padding-inline-end: 24px;
+  }
+
+  form.combined-form > input {
+    display: inline-block;
+    inline-size: 280px;
+    margin-inline-end: 16px;
+  }
+
+  form.combined-form > .combined-submit {
+    display: inline-block;
+    inline-size: 280px;
   }
 }

@@ -1,0 +1,102 @@
+:root {
+  --font: 'Roboto';
+  --primary: #212121;;
+  --primary100: #424242;
+  --primary200: #616161;
+  --primary400: #808080;
+
+  --secondary: #FFFFFF;
+  --secondary100: #FEC62E;
+  --secundary200: #3A3539;
+}
+
+h1 ~ p, h2 {
+  color: var(--primary);
+}
+
+nav h3 {
+  color: var(--primary200)
+}
+
+nav li a {
+  color: var(--primary200);
+}
+
+nav .variants li a {
+  color: var(--primary300);
+}
+
+.default-theme .footer-content {
+  background-color: var(--primary);
+}
+
+nav .variants li.selected a {
+  color: white;
+}
+
+main h1 {
+  font-weight: normal;
+}
+
+main p {
+  font-size: 16px;
+}
+
+main blockquote {
+  border-radius: 0;
+  background-color: var(--secondary);
+  border-inline-start: 4px solid var(--primary);
+  padding-inline-start: 16px;
+  padding-block: 0;
+}
+
+main blockquote p {
+  color: var(--primary100);
+  font-weight: normal;
+  margin: 0;
+  line-height: 32px;
+}
+
+main blockquote p .autor {
+  color: var(--primary200);
+}
+
+pre {
+  background-color: var(--secondary100);
+}
+
+.section-content ul {
+  list-style-image: url('../images/market-black.png');
+}
+
+.section-content.counter h3 {
+  position: relative;
+  display: inline-block;
+}
+
+.section-content.counter h3::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: var(--primary100);
+  display: inline-block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.default-theme .section-content#box-model h3 {
+    font-weight: normal;
+}
+
+.default-theme form input {
+  border-radius: 90px;
+}
+
+.default-theme form input[type="submit"] {
+  background-color: var(--primary);
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgb(255, 255, 255, 0.3), transparent), url('/images/pattern.png');
+}

@@ -1,7 +1,16 @@
-body.theme-c {
-  background: var(--white30);
-  color: var(--black20);
-  font-family: 'Roboto', sans-serif;
+:root .theme-c {
+  --font: 'Roboto';
+  --primary: #212121;;
+  --primary100: #424242;
+  --primary200: #616161;
+  --primary300: #C4C4C4;
+  --secondary: #FFFFFF;
+  --secondary100: var(--primary);
+  --secundary200: #E5E5E5;
+}
+
+.theme-c h3 {
+  color: var(--primary100);
 }
 
 .theme-c nav section.nav-content {
@@ -10,14 +19,13 @@ body.theme-c {
 
 .theme-c nav .details h4 {
   font-size: 14px;
-  color: var(--gray30);
   font-weight: bold;
   margin-block: 16px;
 }
 
 .theme-c nav .content-links {
   padding-inline-start: 16px;
-  border-inline-start: 4px solid #C4C4C4;
+  border-inline-start: 4px solid var(--primary300);
 }
 
 .theme-c h1 {
@@ -25,21 +33,12 @@ body.theme-c {
   line-height: 37.5px;
 }
 
-.theme-c h2, .theme-c h3 {
-  color: var(--black10);
-}
-
 .theme-c p {
   font-size: 16px;
-  font-weight: normal;
 }
 
-.theme-c .section-content p {
-  color: var(--black10);
-}
-
-.theme-c li, .theme-c .section-content ol li, .theme-c .section-content li span {
-  color: var(--black10);
+.theme-c footer p {
+  font-size: 24px;
 }
 
 .theme-c .section-content#box-model h3 {
@@ -47,77 +46,38 @@ body.theme-c {
 }
 
 .theme-c pre {
-  background: var(--gray10);
-  border: none;
-  box-shadow: none;
+  background: var(--secundary200);
 }
 
 .theme-c nav ul.variants li a {
-    color: var(--gray30);
-    font-weight: 500;
-}
-
-.theme-c nav ul.variants li.selected a {
-    color: var(--white30);
-    font-weight: 500;
-}
-
-.theme-c header a {
-    color: var(--gray30);
+  font-weight: 500;
 }
 
 .theme-c header h3 {
-  color: var(--gray30);
   font-weight: normal;
 }
 
-.theme-c blockquote {
-  background: var(--white30);
-}
-
-.theme-c .slider-bullet-list .slider-bullet {
-  background: rgba(66, 66, 66, 0.2);
-}
-
 .theme-c .form input {
-  background: var(--white30);
-  border: 1px solid var(--black30);
+  border-color: var(--primary200);
   border-radius: 90px;
-  color: var(--black30);
-}
-
-.theme-c .form input::-webkit-input-placeholder {
-  color: var(--black10);
-}
-
-.theme-c .form input[type="submit"] {
-  background: black;
-  color: var(--white30);
-}
-
-.theme-c .hero {
-    background-image: linear-gradient(to top, rgb(255, 255, 255, 0.3), transparent), url('/images/pattern.png');
 }
 
 .theme-c blockquote {
-  border-inline-start: 4px solid var(--black10);
+  border-inline-start: 4px solid var(--primary);
+  background: var(--secondary);
   border-radius: 0;
   padding-block: 0;
   padding-inline: 16px;
 }
 
-.theme-c blockquote p{
+.theme-c blockquote p {
+  color: var(--primary100);
   margin-block: 0;
   line-height: 32px;
-  color: var(--gray20);
 }
 
-.theme-c blockquote span {
-  color: var(--gray30);
-}
-
-.theme-c blockquote span::before {
-  content: '-';
+.theme-c .section-content ul {
+  list-style-image: url('../images/market-black.png');
 }
 
 @media screen and (min-width: 1366px) {
@@ -138,5 +98,15 @@ body.theme-c {
   .theme-c h1 {
     font-size: 60px;
     line-height: 70.31px;
+  }
+
+  .theme-c blockquote p {
+    font-size: 24px;
+    line-height: 32px;
+    margin-block: 8px;
+  }
+
+  .theme-c footer .wrapper {
+    inline-size: 100%;
   }
 }
