@@ -201,9 +201,6 @@ p.cta {
   font-weight: normal;
 }
 
-p.cta a {
-}
-
 .section-content {
   margin-block-start: 40px;
 }
@@ -272,10 +269,6 @@ blockquote {
   line-height: 32px;
   font-size: 17px;
   font-weight: bold;
-}
-
-.main hr {
-
 }
 
 .wrapper {
