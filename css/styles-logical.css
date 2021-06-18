@@ -1,17 +1,3 @@
-:root {
-  font-size: 16px;
-  --white30: white;
-  --white20: #A5A3A5;
-  --white10: #3A3539;
-
-  --black30: black;
-  --black20: #212121;
-  --black10: #424242;
-
-  --gray30: #616161;
-  --gray10: #E5E5E5;
-}
-
 /* =================================================================
 Theme colors
 */
@@ -30,29 +16,10 @@ b {
   color: var(--secondary100);
 }
 
-details summary {
-  font-weight: bold;
-}
 
 form .combined-submit {
   border: 1px solid var(--primary);
-  font-size: 0;
-  border-radius: 90px;
-  margin-block-end: 40px;
 }
-
-form .combined-submit input {
-  display: inline-block;
-  inline-size: 60%;
-  border: none;
-  border-radius: 0;
-  margin-block: 0;
-}
-
-form .combined-submit input[type="submit"] {
-  inline-size: 40%;
-}
-
 
 .form input  {
   border: 1px solid var(--primary);
@@ -117,6 +84,28 @@ blockquote p {
 /* =================================================================
   Logical sizes
 */
+
+form .combined-submit {
+  font-size: 0;
+  border-radius: 90px;
+  margin-block-end: 40px;
+}
+
+form .combined-submit input {
+  display: inline-block;
+  inline-size: 60%;
+  border: none;
+  border-radius: 0;
+  margin-block: 0;
+}
+
+form .combined-submit input[type="submit"] {
+  inline-size: 40%;
+}
+
+details summary {
+  font-weight: bold;
+}
 
 blockquote span::before {
   content: '-';
